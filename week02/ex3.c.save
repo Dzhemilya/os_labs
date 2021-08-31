@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void triangle(FILE* res_file, int size){
+int n, leftGap, i,j, heightOfTriangle;
+leftGap = n;
+for (int i=1; i<=n; i++){
+	for (int j=1; j<=(2n-1); j++){
+
+	printf();
+}
+
+
+int main() {
+int *USER_INPUT;
+int SIZE=4;
+
+USER_INPUT=(int*)malloc(SIZE*sizeof(int));
+
+printf("Enter integer number n");
+sscanf("%d",& USER_INPUT);
+
+
+}
