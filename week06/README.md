@@ -31,7 +31,11 @@ AVG WT = 3.000000
 ```
 
 Comparing the outputs of various algorithms,
+
 I noticed that in many cases SJF works better (we usually have a lot of short tasks).
+
 Although the SJF algorithm needs to know in advance the time it takes for this process to be performed, which sometimes impossible.
+
 In modern operating systems we are working with something more complex,
-More optimized priority variation of the round robin algorithm. 
+
+More optimized priority variation of the round robin algorithm.
