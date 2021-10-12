@@ -1,0 +1,4 @@
+Physical addressing means that your program really knows the real location of RAM.
+For example, by accessing a variable at 0x31337, you are in fact accessing the physical RAM chips in which this variable is stored.
+With virtual addressing, all accesses to the application's memory are sent to the page table, which is then mapped to the virtual to the physical address.
+Thus, each application has its own "private" address space, and no program can read or write data to the memory of another program. This is called software segmentation.
