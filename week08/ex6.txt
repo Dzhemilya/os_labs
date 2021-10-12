@@ -1,0 +1,3 @@
+With 8-KB pages and a 16-bit virtual address space, the number of virtual pages is 2^16/2^13, which is 2^3=8.
+It is obvious, because you need to divide system virtual adress space for table of pointers for pages and pointers
+within pages. If we increase size of page, we decrease size of possible VPT. This works in both directions. 
