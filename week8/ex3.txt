@@ -1,0 +1,2 @@
+If I run 'top -d 1' I will see running processes, their virtual memory usage, percent of all available memory usage.
+When ex2 is running, I see that virtual memory of that process is increasing.
