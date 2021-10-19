@@ -1,0 +1,6 @@
+ - Hit rate will go upper, as accesses to the same page increases.
+ - If new page requested every time -> hit rate will be low.
+
+E.g. If we have all '1' -> hit = 999
+     If we have conseq from '1' to N -> hit = 0
+
