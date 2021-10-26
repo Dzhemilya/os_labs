@@ -1,0 +1,4 @@
+
+660 means that user has a permission to read and write, group has a permission to read and write, others do not have an access to the file
+775 means that user has a permission to read, write and execute, group has a permission to read, write and execute, others have a permission to read and execute
+777 means thst user, group and others has all possible permissions: read, write, execute
