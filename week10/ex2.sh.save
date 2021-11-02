@@ -1,0 +1,1 @@
+link ./week01/file.txt _ex2.txtile.txtwithex2.txtwhich resides inweek10directory.You have to find all links to the filefile.txtand store the output ina fileex2.txt.You have to remove all links from the filefile.txtand append theoutput to the fileex2.txt.You have to put all commands that you executed in a scriptex2.sh.You have submitted all files ex2.
