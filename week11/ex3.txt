@@ -1,0 +1,26 @@
+Without O_SYNC:
+
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc copy.c -o copy
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.01s system 31% cpu 0.016 total
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc -o copy copy.c -DBUF_SIZE=64
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.01s system 30% cpu 0.023 total
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc -o copy copy.c -DBUF_SIZE=32
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.01s system 29% cpu 0.037 total
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$
+
+With O_SYNC:
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc copy.c -o copy
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.01s user 0.00s system 37% cpu 0.030 total
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc -o copy copy.c -DBUF_SIZE=64
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.00s user 0.02s system 37% cpu 0.041 total
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ gcc -o copy copy.c -DBUF_SIZE=32
+dzhemilya@dzhemilya-TM1701:~/os_labs/week12$ time ./copy ex2.c ex3.c
+./copy ex2.c ex3.c  0.01s user 0.00s system 32% cpu 0.034 total
+
+# File ex2.c is too small -> it is copied very quickly.
+# When O_SYNC is enabled, the time should take a lot, since time is wasted on forced flushing of the I/O cache buffers to disk.
