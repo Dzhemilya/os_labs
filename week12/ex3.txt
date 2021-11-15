@@ -1,0 +1,13 @@
+[+] Avaliable shortcuts:
+[P,E]:'I passed the Exam!'
+[C,A,P]:'Get some cappuccino!'
+[I,W,R]:'I want to read Andrew S. Tanenbaum book!'
+CA
+Get some cappuccino!
+P
+IW
+I want to read Andrew S. Tanenbaum book!
+R
+P
+I passed the Exam!
+E
