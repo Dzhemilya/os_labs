@@ -1,0 +1,14 @@
+There are 3 ways to deal with deadlocks: recovery, prevention and avoidance. 
+Recovery method is used when we care about following things: 
+ *    no limitation on the resource access or restrict process actions
+ *    no delays of the process initiation 
+ *    facilitates processing of deadlocks online
+- but its disadvantage is inevitable preemptive losses;
+Prevention method is used when these properties are not particularly crucial for us:
+ *    requires long waiting time 
+ *    inefficient use of allocated resources 
+ *    process not knowing in advance all the required resources
+Avoidness method is used when following losses can be afforded:
+ *    resources that will be used in future should be known in advance 
+ *    Some processes can be blocked for a long period of time 
+ *    Only fixed number of resources exists for allocation
